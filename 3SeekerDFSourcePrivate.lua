@@ -92,7 +92,7 @@ local pchar = game.Players.LocalPlayer.Character
 local Float = Instance.new('Part')
 Float.Name = "floatName"
 Float.Parent = pchar
-Float.Transparency = 0
+Float.Transparency = 1
 Float.Size = Vector3.new(2,0.2,1.5)
 Float.Anchored = true
 local FloatValue = -3.1
@@ -587,7 +587,7 @@ else
     BP.Name = math.random(10000,99999)
     BP.CFrame = CFrame.new(8784, -35, 3036)
     BP.Size = Vector3.new(9999,1,9999)
-    BP.Transparency = 0.5
+    BP.Transparency = 0
 
     local WebhookStatsLoop = coroutine.create(WebhookStats)
     coroutine.resume(WebhookStatsLoop)
